@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <title>Avatar - Galeria</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="images/logo.webp" height="100px" width="auto" alt="Logo Avatar"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article class="principal">
+
+        </article>
+        <h1>GALERÍA</h1>
+        <article class="secundario">
+            <div id="galeriaWrapper">
+                <a class="example-image-link" href="images/galeria/aangValleBig.jpg" data-lightbox="Aang" data-title="Aang en el templo del sur"><img class="example-image" src="images/galeria/aangValleMin.webp" alt="Aang en el templo del sur"/></a>
+                <a class="example-image-link" href="images/galeria/firstAvatarBig.webp" data-lightbox="Aang" data-title="Cuadro de la leyenda del primer avatar"><img class="example-image" src="images/galeria/firstAvatarMin.webp" alt="Cuadro de la leyenda del primer avatar"/></a>
+                <a class="example-image-link" href="images/galeria/aangIcebergBig.webp" data-lightbox="Aang" data-title="Aang atrapado en el iceberg"><img class="example-image" src="images/galeria/aangIcebergMin.webp" alt="Aang atrapado en el iceberg"/></a>
+                <a class="example-image-link" href="images/galeria/allAvatarsBig.jpg" data-lightbox="Aang" data-title="Aang atrapado en el iceberg"><img class="example-image" src="images/galeria/allAvatarsMin.webp" alt="Aang atrapado en el iceberg"/></a>
+                <a class="example-image-link" href="images/galeria/aangAvatarBig.jpg" data-lightbox="Aang" data-title="Aang estado avatar"><img class="example-image" src="images/galeria/aangAvatarMin.webp" alt="Aang estado avatar"/></a>
+                <a class="example-image-link" href="images/galeria/teamAavatarBig.jpg" data-lightbox="Aang" data-title="Team avatar"><img class="example-image" src="images/galeria/teamAavatarMin.webp" alt="Team avatar"/></a>
+                <a class="example-image-link" href="images/galeria/kataraYsokkaBig.webp" data-lightbox="Aang" data-title="Katara y Sokka en la tribu del agua sur"><img class="example-image" src="images/galeria/kataraYsokkaMin.webp" alt="Katara y Sokka en la tribu del agua sur"/></a>
+                <a class="example-image-link" href="images/galeria/aangYzukoBig.webp" data-lightbox="Aang" data-title="Aang y Zuko entrenando"><img class="example-image" src="images/galeria/aangYzukoMin.webp" alt="Aang y Zuko entrenando"/></a>
+                <a class="example-image-link" href="images/galeria/zukoFireBig.webp" data-lightbox="Aang" data-title="Zuko maestro del fuego"><img class="example-image" src="images/galeria/zukoFireMin.webp" alt="Zuko maestro del fugo"/></a>
+                <a class="example-image-link" href="images/galeria/appaBig.webp" data-lightbox="Aang" data-title="Appa volando con el team avatar"><img class="example-image" src="images/galeria/appaMin.webp" alt="Appa volando con el team avatar"/></a>
+                <a class="example-image-link" href="images/galeria/irohBig.jpg" data-lightbox="Aang" data-title="Iroh tomando té con Zuko"><img class="example-image" src="images/galeria/irohMin.webp" alt="Iroh tomando té con Zuko"/></a>
+                <a class="example-image-link" href="images/galeria/momoBig.webp" data-lightbox="Aang" data-title="Momo"><img class="example-image" src="images/galeria/momoMin.webp" alt="Momo"/></a>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <img src="images/redes/facebook.png" alt="Facebook">
+        <img src="images/redes/twitter.png" alt="Twitter">
+        <img src="images/redes/youtube.png" alt="Youtube">
+        <img src="images/redes/instagram.png" alt="Instagram">
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

@@ -191,7 +191,46 @@ div.pie_contacto span{
 	margin:0 5px 0 15px;
 }
 
-
+.principal-pj{
+	display: grid;
+	grid-template-columns: repeat(2 , 1fr);
+	gap: 10px;
+	padding: 20px;
+}
+.pj-card{
+	box-shadow: 0px 5px 18px 0px #9b9797;
+	height: 100%;
+	box-sizing: border-box;
+}
+.pjcard-wrapper img{
+	transition: transform 0.3s ease-in-out; 
+}
+.pj-card:hover{
+	outline: 2px solid black;
+	cursor: pointer;
+}
+.pj-card a div{
+	overflow: hidden;
+}
+.pj-card:hover .pjcard-wrapper>div>img{
+	transform: scale(1.1);
+}
+.pjcard-wrapper{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+.pjcard-wrapper h3{
+	width: 100%;
+	text-align: center;
+	padding : 5px 0px 5px 0px;
+	font-size: 1.4rem;
+}
+.pjcard-wrapper p{
+	padding: 0px 20px 0px 20px;
+	font-size: 1.2rem;
+}
 @media (max-width: 768px) { 
 	header{
 		flex-wrap: wrap;

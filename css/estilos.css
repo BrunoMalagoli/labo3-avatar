@@ -19,6 +19,7 @@ header{
 	position: sticky;
 	top: 0;
 	z-index: 2;
+	width: 100%;
 }
 nav{
 	display: flex;
@@ -119,6 +120,7 @@ footer img{
 h1{
 	text-align: center;
 	margin-top: 1.5em;
+	font-size: 2.5rem;
 }
 .form{
 	width:100%;
@@ -190,16 +192,21 @@ div.pie_contacto{
 div.pie_contacto span{
 	margin:0 5px 0 15px;
 }
-
+/* PERSONAJES */
 .principal-pj{
-	display: grid;
-	grid-template-columns: repeat(2 , 1fr);
-	gap: 10px;
+	gap: 20px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	padding: 20px;
+	margin-top: 20px;
 }
 .pj-card{
 	box-shadow: 0px 5px 18px 0px #9b9797;
 	height: 100%;
+	min-height: 675px;
+	width: 40%;
+	min-width: 400px;
 	box-sizing: border-box;
 }
 .pjcard-wrapper img{
@@ -231,6 +238,41 @@ div.pie_contacto span{
 	padding: 0px 20px 0px 20px;
 	font-size: 1.2rem;
 }
+
+/* VISTA PERSONAJE */
+
+.principal-pjdesc{
+	display: flex;
+	padding: 20px;
+	width: 90%;
+	margin-top: 20px;
+}
+.principal-pjdesc article{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.principal-pjdesc article div:nth-child(1){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	min-width: 300px;
+	overflow: hidden;
+}
+.principal-pjdesc article div:nth-child(2){
+	padding: 15px;
+	width: 90%;
+	font-size: 1.3rem;
+}
+
+.principal-pjdesc article h3{
+	font-size: 2rem;
+	padding: 20px 0px 5px 0px;
+}
+
 @media (max-width: 768px) { 
 	header{
 		flex-wrap: wrap;
@@ -284,6 +326,10 @@ div.pie_contacto span{
 		position:static;
 		margin-top: 20px;
 		width: 100%;
+	}
+	.pj-card:hover{
+		outline: none;
+		cursor: pointer;
 	}
 }
 
@@ -349,6 +395,9 @@ footer img{
 div.pie_contacto{
 	position:static;
 	margin-top: 15px;
+	width: 100%;
+}
+.principal-pjdesc{
 	width: 100%;
 }
 }

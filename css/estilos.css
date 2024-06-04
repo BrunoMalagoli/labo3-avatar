@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 * {
 	padding: 0px;
 	margin: 0px;
@@ -21,6 +24,10 @@ header{
 	z-index: 2;
 	width: 100%;
 }
+.logo-container a img{
+	height: 65px;
+}
+
 nav{
 	display: flex;
 	align-items: center;
@@ -89,9 +96,24 @@ section{
 	width: 100%;
 }
 .secundario div{
-	width: 33%;
+	width: 70%;
 	padding: 2%;
 	text-align: center;
+}
+.temporadasDescWrapper{
+	width: 100%;
+	padding: 2%;
+	padding-top: 10vh;
+}
+.temporadasDescWrapper h4{
+	font-size: 2rem;
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 5vh;
+}
+.temporadasDescWrapper p{
+	font-size: 1.5rem;
+	padding: 20px;
 }
 .secundario div a img{
 	width: 100%;
@@ -122,8 +144,28 @@ h1{
 	margin-top: 1.5em;
 	font-size: 2.5rem;
 }
+.form-container{
+	width: 100%;
+	padding: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.form-container>div{
+	width: 40%;
+	overflow: hidden;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-container>div>img{
+	border-radius: 300px;
+}
 .form{
-	width:100%;
+	min-width: 500px;
+	width:50%;
 	height:440px;
 	background:#e6e6e6;
 	border-radius:8px;
@@ -191,6 +233,14 @@ div.pie_contacto{
 
 div.pie_contacto span{
 	margin:0 5px 0 15px;
+}
+div.pie_contacto{
+	position:static;
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 /* PERSONAJES */
 .principal-pj{
@@ -277,6 +327,9 @@ div.pie_contacto span{
 	header{
 		flex-wrap: wrap;
 	}
+	.logo-container a img{
+		height: 100px;
+	}
 	nav ul {
 		display: none;
 	}
@@ -325,11 +378,27 @@ div.pie_contacto span{
 	div.pie_contacto{
 		position:static;
 		margin-top: 20px;
+		width: auto;
+		flex-wrap: wrap;
+		height: auto;
+		right: 0;
+		min-width: fit-content;
+	}
+	footer{
 		width: 100%;
+	}
+	.form{
+		min-width: 100%;
 	}
 	.pj-card:hover{
 		outline: none;
 		cursor: pointer;
+	}
+	.form-container>div{
+		width: 100%;
+	}
+	.form-container>div>img{
+		border-radius: 300px;
 	}
 }
 
@@ -395,7 +464,9 @@ footer img{
 div.pie_contacto{
 	position:static;
 	margin-top: 15px;
-	width: 100%;
+	width: auto;
+	right: 0;
+	min-width: fit-content;
 }
 .principal-pjdesc{
 	width: 100%;

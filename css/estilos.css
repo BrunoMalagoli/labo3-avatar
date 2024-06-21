@@ -13,9 +13,9 @@ body{
 }
 header{
 	padding-top: 2%;
-	padding-right: 7%;
+	padding-right: 5%;
 	padding-bottom: 2%;
-	padding-left: 7%;
+	padding-left: 5%;
 	display: flex;
 	justify-content: space-between;
 	background-color: #FEFEFE;
@@ -43,7 +43,7 @@ nav ul li{
 	display: inline-block;
 }
 nav ul li a{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 }
 nav ul li a:hover{
@@ -53,6 +53,10 @@ nav ul li a:hover{
 a{
 	text-decoration: none;
 	color: #000000;
+}
+.activeAnchor{
+	font-weight: bolder;
+	text-decoration: underline;
 }
 .icon { display: none; }
 section{
@@ -105,13 +109,35 @@ section{
 	padding: 2%;
 	padding-top: 10vh;
 }
-.temporadasDescWrapper h4{
+.temporadaDescImg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.temporadaDescImg img{
+	height: 450px;
+	width: 450px;
+}
+.temporadasDescWrapper div{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.temporadasDescWrapper:nth-child(2)>div{
+	flex-wrap: wrap-reverse;
+}
+.temporadasDescWrapper div div{
+	width: 50%;
+	min-width: 500px;
+}
+.temporadasDescWrapper div div h4{
 	font-size: 2rem;
 	width: 100%;
 	padding-left: 10px;
 	margin-top: 5vh;
 }
-.temporadasDescWrapper p{
+.temporadasDescWrapper div div p{
 	font-size: 1.5rem;
 	padding: 20px;
 }
@@ -124,20 +150,23 @@ h4{
 }
 footer{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	max-width: 1300px;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 350px;
+	height: 300px;
+	gap: 35px;
 	background-color: #ffffffab;
 }
-footer img{
-	max-width: 2.5rem;
+footer i{
+	font-size: 2rem;
+}
+footer span{
+	text-align: center;
 	width: 100%;
-	height: auto;
-	margin-right: .5%;
 }
 h1{
 	text-align: center;
@@ -254,7 +283,7 @@ div.pie_contacto{
 .pj-card{
 	box-shadow: 0px 5px 18px 0px #9b9797;
 	height: 100%;
-	min-height: 675px;
+	min-height: 750px;
 	width: 40%;
 	min-width: 400px;
 	box-sizing: border-box;
@@ -286,7 +315,7 @@ div.pie_contacto{
 }
 .pjcard-wrapper p{
 	padding: 0px 20px 0px 20px;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 /* VISTA PERSONAJE */
@@ -375,6 +404,11 @@ div.pie_contacto{
 		text-align: center;
 		width: 100%;
 	}
+	.temporadasDescWrapper div div{
+		width: 100%;
+		min-width: 0;
+	}
+
 	div.pie_contacto{
 		position:static;
 		margin-top: 20px;
@@ -446,17 +480,21 @@ section{
 	margin-top: 1%;
 	display: block;
 }
-
+.temporadaDescImg img{
+	height: 300px;
+	width: 300px;
+}
 h2{
 	font-size: 1rem;
 }
 h4{
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 footer{
-	height: 80px;
+	height: 150px;
 	width: 100%;
 	justify-content: space-evenly;
+	align-items: flex-end;
 }
 footer img{
 	max-width: 3rem;

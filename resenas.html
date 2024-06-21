@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Avatar - Reseñas</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="images/logo.webp" width="auto" alt="Logo Avatar"></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <nav id="menu_bar" class="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="activeAnchor" href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>RESEÑAS</h1>
+    <section class="principal-resenas">
+        <article>
+            <div>
+                <img height="100px" width="100px" src="./images/resenas/ignlogo.webp" alt="Logo IGN">
+                <span><b>IGN</b></span>
+            </div>
+            <div>
+                <blockquote><i>"La serie tiene un increíble atractivo atemporal, mezclando humor, acción y emoción, siendo favorita tanto de niños como de adultos"</i>​</blockquote>
+            </div>
+        </article>
+        <article>
+            <div>
+                <img height="100px" width="100px" src="./images/resenas/indiewirelogo.webp" alt="Logo Indie Wire">
+                <span><b>INDIE WIRE</b></span>
+            </div>
+            <div>
+                <blockquote><i>"Destacan los temas maduros y la narrativa sofisticada que resuenan con públicos de todas las edades"</i>​</blockquote>
+            </div>
+        </article>
+        <article>
+            <div>
+                <img height="100px" width="100px" src="./images/resenas/rtlogo.webp" alt="Logo Rotten tomattoes">
+                <span><b>ROTTEN TOMATOES</b></span>
+            </div>
+            <div>
+                <blockquote><i>"Destaca la riqueza en el desarrollo de personajes y la profundidad emocional de la serie. La dinámica entre Aang y Zuko es especialmente destacable por su complejidad y evolución."</i>​</blockquote>
+            </div>
+        </article>
+        <article>
+            <div>
+                <img height="100px" width="100px" src="./images/resenas/espinof.png" alt="Logo Espinof">
+                <span><b>ESPINOF</b></span>
+            </div>
+            <div>
+                <blockquote><i>"Elogia la serie por su equilibrio perfecto entre acción, comedia y drama. La serie es reconocida por su narrativa envolvente y sus personajes bien desarrollados."</i>​</blockquote>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <a target="_blank" href="https://www.youtube.com/watch?v=SZU_yEV5byc&list=PLSspY6TXFNPRKEaAi231F7085KQC9d9Jx&ab_channel=Avatar%3ALaLeyendadeAang"><i class="fa-brands fa-youtube"></i></a>
+        <a target="_blank" href="https://www.instagram.com/avatarthelastairbender/"><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://x.com/AvatarAangNews"><i class="fa-brands fa-instagram"></i></a>
+        <span>&copy; Creado por Bruno Malagoli - 2024</span>
+    </footer>
+    <script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu_bar");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+    </script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

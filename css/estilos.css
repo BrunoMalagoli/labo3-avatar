@@ -170,8 +170,9 @@ footer span{
 }
 h1{
 	text-align: center;
-	margin-top: 1.5em;
+	padding: 1.5rem;
 	font-size: 2.5rem;
+	background-color: #FEFEFE;
 }
 .form-container{
 	width: 100%;
@@ -318,6 +319,43 @@ div.pie_contacto{
 	font-size: 1.5rem;
 }
 
+/* RESEÑAS */
+.principal-resenas{
+	padding: 5% 12% 5% 12%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.principal-resenas > :nth-child(even){
+	align-self: flex-end;
+}
+.principal-resenas article{
+	background: rgba( 155, 155, 155, 0.1 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	width: 55%;
+	min-width: 400px;
+	padding: 30px;
+	margin-bottom: 25px;
+}
+.principal-resenas article div:nth-child(1){
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.principal-resenas article div:nth-child(1) img{
+	border-radius: 50px;
+	outline: 3px solid black;
+}
+.principal-resenas article div:nth-child(1) span{
+	padding: 13px 0px 10px 0px;
+	font-size: 1.2rem;
+}
+.principal-resenas article div:nth-child(2) blockquote{
+	font-size: 1.3rem;
+}
 /* VISTA PERSONAJE */
 
 .principal-pjdesc{
@@ -375,6 +413,7 @@ div.pie_contacto{
 	}
 	nav.responsive ul li a {
 		padding-right: 0;
+		font-size: 1.5rem;
 	}
 	.icon {
 		display: block;
@@ -489,6 +528,20 @@ h2{
 }
 h4{
 	font-size: 1.2rem;
+}
+.principal-resenas{
+	padding: 20px 15px 20px 15px;
+}
+.principal-resenas > :nth-child(even){
+	align-self: center;
+}
+.principal-resenas > :nth-child(odd){
+	align-self: center;
+}
+.principal-resenas article{
+	font-weight: 500;
+	font-style: normal;
+	max-width: 100%;
 }
 footer{
 	height: 150px;

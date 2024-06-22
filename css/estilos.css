@@ -216,7 +216,9 @@ h3.contacto{
 	border-bottom:3px solid #78788c;
 	font-size: large;
 }
-
+.example-image{
+	margin-right: 0px;
+}
 input{
 	width:100%;
 	margin-top: 30px;
@@ -420,6 +422,9 @@ div.pie_contacto{
 		padding-right: 0.6rem;
 		margin: auto 0;
 	}
+	.icon i{
+		font-size: 2rem;
+	}
 	.principal{
 		height: 35vh;
 		padding: 10%;
@@ -512,8 +517,14 @@ section{
 	margin-right: auto;
 }
 .principal{
-	height: 250px;
+	height: 200px;
 	padding: 10%;
+}
+.principal-pj{
+	overflow: hidden;
+	min-width: none;
+	width: 100%;
+	padding: 10px 0px 10px 0px ;
 }
 .secundario{
 	margin-top: 1%;

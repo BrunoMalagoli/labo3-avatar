@@ -553,6 +553,7 @@ h4{
 	font-weight: 500;
 	font-style: normal;
 	max-width: 100%;
+	min-width: 300px;
 }
 footer{
 	height: 150px;
